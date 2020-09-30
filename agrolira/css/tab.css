@@ -1,0 +1,41 @@
+
+.b, .c{ display:none;}
+
+#body em{ font-style:normal; font-size:36px;}
+
+.buttons{
+	border-bottom:solid #d1c8b8 4px;
+	display:block;
+	padding:8px;
+	width:80px;
+	-moz-border-radius: 5px 20px 5px 20px;
+	border-radius: 5px 20px 5px 20px;
+	text-align:center;
+	margin:1px;
+	background:#999999;
+	text-decoration:none !important; color:#FFFFFF;
+	float:left;font-family:Georgia, "Times New Roman", Times, serif; font-size:14px
+}
+
+.buttonHover{background:#032D3D; color:#FFF !important; border-bottom:solid #999 4px; }
+
+a.buttons:hover{background:#999999; color:#FFF; border-bottom:solid #666 4px;}
+
+#body {
+	background:#032D3D;
+	text-align:justify;
+	overflow:hidden;
+	color:#fff;
+	padding:20px;
+	-moz-border-radius: 1em 4em 1em 4em;
+	border-radius: 1em 4em 1em 4em;
+    height:auto;
+	width:100%;
+}
+ 
+#wrap{
+	text-align:left;
+	overflow:hidden;
+	width:100%;
+	height:auto;
+}

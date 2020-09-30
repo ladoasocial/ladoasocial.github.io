@@ -1,0 +1,66 @@
+
+/* Tablet Layout: 768px. */
+
+@media (max-width: 768px), only screen and (max-device-width: 768px) {
+.wpm_mobile_center{  float:none; text-align:center; }
+.wpm_header{ min-height:80px;  }
+.wpm_menu li a{ padding:10px 10px; margin-top:15px; }
+.navbar-toggle{ margin-top:0px; margin-bottom:5px; margin-right:0px; }
+.wpm_logo{  margin:0 auto; float: left; margin-top:15px;}
+.open .dropdown-menu>li>a:hover{ background:rgba(0, 0, 0, 0.5) !important; color:#FFF !important;}
+.navbar-nav .open .dropdown-menu>li>a{ color:#FFF !important; background: #2B3F46; text-align:center;}
+.wpm_navber{ background:none; margin-bottom:0px;}
+.navbar-default .navbar-toggle{ float:right;}
+.navbar-header{ text-align:center;}
+
+
+
+.wpm_header_top .col-sm-5 ul li{ float:none;}
+.social_icon{ margin-top:10px;}
+.wpm_header_top p{ margin-bottom:10px;}
+.wpm_popup_area a i{ margin-top:0px; margin-bottom:20px;}
+                    
+
+.carousel-control .glyphicon-chevron-right{ top:45%;}
+.carousel-control .glyphicon-chevron-left{ top:45%;}
+
+.main_wraper{ margin:0 auto;} 
+
+
+.wpm_popup_area a i{ margin-top: 0px; float: right;}
+.wpm_fixed_header .wpm_popup_area a i{ margin-top: 0px; float: right;}
+
+
+}
+
+
+
+
+@media (max-width: 480px), only screen and (max-device-width: 480px) {
+
+.carousel-control .glyphicon-chevron-right{ font-size:18px;}
+.carousel-control .glyphicon-chevron-left{ font-size:18px;}
+.wpm_slider_area h1{ margin-bottom:30px; font-size:18px;}
+
+
+}
+
+
+@media (max-width: 320px), only screen and (max-device-width: 320px) {
+
+
+.wpm_slider_area h3 { font-size:12px;}
+.carousel-indicators{ display:none;}
+.wpm_slider_area h3{ margin-bottom:-20px;}
+
+
+.main_wraper .back p{ display:none;}
+
+.wpm_slider_area h1 {  margin-bottom: -12px; font-size: 18px;}
+
+.wpm_logo{ height: 60px;}
+
+.buttons{ width: 77px !important;}
+
+
+}
