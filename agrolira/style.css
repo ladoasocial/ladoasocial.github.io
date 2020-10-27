@@ -314,7 +314,7 @@ input:-moz-placeholder { color:#fff !important; }
 .wpm_service_area .col-sm-3{margin-bottom:30px;}
 .wpm_service_area img{ margin-bottom:17px;}
 .wpm_service_area h3{ margin-bottom:20px;}
-.wpm_service_area .col-sm-6 .row .col-sm-6{ padding:0px; background:#7ef812; }
+.wpm_service_area .col-sm-6 .row .col-sm-6{ padding:0px; background:#8bc242; }
 .wpm_service_area .col-sm-6 .row .col-sm-6 img{ margin-bottom:0px;}
 .wpm_service_area .col-sm-6 .row .col-sm-6 h3{ margin:20px; color:#FFF; }
 .wpm_service_area .col-sm-6 .row .col-sm-6 p{ margin-left:20px; margin-bottom:18px; margin-right:20px; color:#FFF;  }
@@ -378,12 +378,12 @@ input:-moz-placeholder { color:#fff !important; }
 .wpm_text_row{ background:rgba(255, 255, 255, 0.35); border-top:2px dotted #7ef812;  border-bottom:2px dotted #7ef812; padding:50px 0px 30px; margin-top:30px; margin-bottom:50px;}
 .wpm_text_row p{ color:#FFF;}
 .wpm_text_row .col-sm-3{ margin-bottom:20px;}
-.wpm_text_row i{ width:35px; height:35px; font-size:22px; color:#FFF; text-align:center; padding-top:5px; background:#7ef812; margin-right:10px;}
+.wpm_text_row i{ width:35px; height:35px; font-size:22px; color:#FFF; text-align:center; padding-top:5px; background:#8bc242; margin-right:10px;}
 .wpm_contact_area .form-control{background:rgba(255, 255, 255, 0.35); border-color:#7ef812; color:#FFF; }
 .wpm_text_input{ margin-bottom:10px;}
 .wpm_textarea{ margin-top:30px; margin-bottom:20px;}
-.wpm_sub_btn{ background:#7ef812; border-color:#7ef812; color:#FFF;}
-.wpm_sub_btn:hover{ background:#7ef812;}
+.wpm_sub_btn{ background:#8bc242; border-color:#7ef812; color:#FFF;}
+.wpm_sub_btn:hover{ background:#8bc242;}
 
 
 
