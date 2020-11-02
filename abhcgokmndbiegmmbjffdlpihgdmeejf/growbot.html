@@ -1,0 +1,238 @@
+<div id="igBotInjectedContainer">
+    <!--<div id="igBotDialog">
+        <div id="igBotDialogQuestion">Question text goes here?</div>
+        <div class="igBotInjectedButton" id="btnDialogOK">OK</div>
+        <div class="igBotInjectedButton" id="btnDialogCancel">Cancel</div>
+    </div>-->
+    <div id="igBotLeft">
+        <div id="igBotHeading">
+            <div>
+                <h1>Lado A Social </h1>
+
+            </div>
+            <label for="cbLimitQueueSize" id="lblLimitQueueSize">
+                <input type="checkbox" checked="checked" id="cbLimitQueueSize">Limitar fila para
+                <input type="number" value="50" min="1" id="txtLimitQueueSize">
+            </label>
+            <div id="igBotQueueCount"></div>
+            <div id="igBotQueueSelectedCount"></div>
+            <select id="igBotQueueOrderBy">
+                <option value="followersAsc">Followers &uarr;</option>
+                <option value="followersDesc">Followers &darr;</option>
+                <option value="followingAsc">Following &uarr;</option>
+                <option value="followingDesc">Following &darr;</option>
+                <option value="postsAsc">Posts &uarr;</option>
+                <option value="postsDesc">Posts &darr;</option>
+                <option value="privateAsc">Private &uarr;</option>
+                <option value="privateDesc">Private &darr;</option>
+                <option value="verifiedAsc">Verified &uarr;</option>
+                <option value="verifiedDesc">Verified &darr;</option>
+                <option value="lastPostAsc">Last Post Date &uarr;</option>
+                <option value="lastPostDesc">Last Post Date &darr;</option>
+                <option value="followRatioAsc">Follow Ratio &uarr;</option>
+                <option value="followRatioDesc">Follow Ratio &darr;</option>
+            </select>
+            <form id="igBotQueueFilterForm">
+                <input type="text" id="igBotQueueFilter" required placeholder="">
+                <button class="close-icon" type="reset"></button>
+            </form>
+            <div id="igBotOptions">
+                <h3>Configurações</h3>
+                <details id="detailsPerformanceOptions">
+                    <summary>Opções de Performance</summary>
+                    <div class="followOptions">
+                        <label for="cbShowStamps">
+                            <input type="checkbox" checked="checked" id="cbShowStamps" /> Mostrar selos na fila
+                        </label>
+                        <label for="cbRemoveFromQueue">
+                            <input type="checkbox" id="cbRemoveFromQueue" /> Remova as contas da fila após o processamento
+                        </label>
+                        <label for="cbConvenienceLinks">
+                            <input type="checkbox" checked="checked" id="cbConvenienceLinks" />
+Mostrar botões de conveniência no feed (Whitelist/Unfollow)
+                        </label>
+                        <label for="cbShowUnfollowingInQueue">
+                            <input type="checkbox" checked="checked" id="cbShowUnfollowingInQueue" /> Mostrar o não seguimento na fila</label>
+                        <label for="cbShowLikesInQueue">
+                            <input type="checkbox" checked="checked" id="cbShowLikesInQueue" /> Mostrar curtidas na fila
+</label>
+                    </div>
+                </details>
+                <details id="detailsWaitTime">
+                    <summary>Configurar tempos de espera</summary>
+                    <div class="followOptions">
+                        <span>Esperar <input type="number" value="60" step="1" min="0" id="textSecondsBetweenActions"></input> segundos depois de seguir / deixar de seguir / curtir</span>
+                        <span>Esperar <input type="number" value="1" step="1" min="0" id="textSecondsAfterSkip"></input> segundos depois de pular</span>
+                        <label for="cbRandomizeTimeDelay">
+                            <input type="checkbox" checked="checked" id="cbRandomizeTimeDelay" />
+Randomize o tempo de espera em até
+                            <input type="number" value="50" step="1" min="0" id="igBotPercentRandomTimeDelay"></input>%
+                        </label>
+                        <span>Esperar <input type="number" value="10" step="1" id="textMinutesAfterSoftRateLimit"></input> minutos após o limite de taxa "suave"</span>
+                        <span>Esperar <input type="number" value="1" step="1" id="textHoursAfterHardRateLimit"></input> horas após o limite de taxa "rígido"</span>
+                        <span>Esperar <input type="number" value="10" step="1" id="textMinutesAfter429RateLimit"></input> minutos após o limite de taxa de 429</span>
+                    </div>
+                </details>
+                <details id="detailsProcessingQueueOptions">
+                    <summary>Configurar opções de processamento de fila</summary>
+                    <div class="followOptions">
+                        <label for="cbAutoSaveQueue">
+                            <input type="checkbox" id="cbAutoSaveQueue" />
+Salvar fila automaticamente (para armazenamento local) após cada conta processada
+                        </label>
+                    </div>
+                </details>
+                <details id="detailsFollowingOptions">
+                    <summary>Configure as seguintes opções</summary>
+                    <div class="followOptions">
+                        <label for="cbFollowAlreadyAttempted">
+                            <input type="checkbox" id="cbFollowAlreadyAttempted" />
+Siga pessoas que eu já tentei</label>
+                        <label for="cbApplyFilterAutomatically" title="Apply the currently selected filters automatically from now on">
+                            <input type="checkbox" id="cbApplyFilterAutomatically" /> Aplicar filtros automaticamente enquanto segue
+</label>
+                    </div>
+                </details>
+                <details id="detailsUnfollowingOptions">
+                    <summary>Configurar opções de não seguir</summary>
+                    <div class="followOptions">
+                        <label for="cbDontUnfollowFollowers">
+                            <input type="checkbox" checked="checked" id="cbDontUnfollowFollowers" /> Não deixe de seguir pessoas que me seguem</label>
+                        <label for="cbUnfollowOld">
+                            <input type="checkbox" id="cbUnfollowOld" /> Deixar de seguir pessoas, comecei a seguir mais de
+                            <input type="number" value="30" step="1" id="textUnfollowOld"></input> dias atrás (mesmo se eles me seguirem)</label>
+                        <label for="cbDontUnfollowFresh">
+                            <input type="checkbox" checked="checked" id="cbDontUnfollowFresh" /> Não deixe de seguir pessoas que comecei a seguir menos de
+                            <input type="number" value="3" step="1" id="textUnfollowNew"></input> dias atrás</label>
+                        <label for="cbDontUnfollowNonGrowbot">
+                            <input type="checkbox" checked="checked" id="cbDontUnfollowNonGrowbot" />
+Não deixe de seguir pessoas seguidas de fora da ferramenta</label>
+                        <label for="cbDontUnfollowFilters">
+                            <input type="checkbox" checked="checked" id="cbDontUnfollowFilters" /> Não pare de seguir pessoas que correspondem aos meus filtros</label>
+                    </div>
+                </details>
+            </div>
+            <div id="multiFilter">
+                <h3>Filtrar contas</h3>
+                <div id="sliders">
+                    Seguidores
+                    <div id="followersSlider"></div>
+                    Segue
+                    <div id="followingSlider"></div>
+                    Taxa de seguimento
+                    <div id="followRatioSlider"></div>
+                    Postagem
+                    <div id="postsSlider"></div>
+                    Última postagem (dias atrás) Observação: as contas privadas são consideradas como postadas pela última vez no ano de 1970.
+                    <div id="lastPostedSlider"></div>
+                </div>
+                <label for="cbFollowPrivateAccounts" id="lblFollowPrivateAccounts">
+                    <input type="checkbox" checked="checked" id="cbFollowPrivateAccounts" /> Contas privadas
+                </label>
+                <label for="cbFilterNonPrivate">
+                    <input type="checkbox" id="cbFilterNonPrivate" checked="checked" /> Contas Públicas</label>
+                <label for="cbFilterVerified">
+                    <input type="checkbox" id="cbFilterVerified" checked="checked" /> Contas verificadas</label>
+                <label for="cbFilterNonVerified">
+                    <input type="checkbox" id="cbFilterNonVerified" checked="checked" /> Contas não verificadas</label>
+                <br>
+                <br>
+                <div>Os filtros abaixo se aplicam apenas ao seguinte (e não ao deixar de seguir):</div>
+                <br>
+                <br>
+                <label for="cbFollowsMe">
+                    <input type="checkbox" id="cbFollowsMe" />
+Segue-me
+</label>
+                <label for="cbNonFollowsMe">
+                    <input type="checkbox" id="cbNonFollowsMe" checked="checked" /> Não me segue</label>
+                <label for="cbFollowedByMe">
+                    <input type="checkbox" id="cbFollowedByMe" />Seguido por mim</label>
+                <label for="cbNonFollowedByMe">
+                    <input type="checkbox" id="cbNonFollowedByMe" checked="checked" /> Não seguido por mim</label>
+                <br>
+                <br>
+                <div class="igBotInjectedButton" id="btnResetFilter">Reiniciar filtros</div>
+                <div class="igBotInjectedButton" id="btnApplyFilter">Aplicar filtros à fila atual</div>
+            </div>
+        </div>
+        <!-- https://refreshless.com/nouislider/-->
+        <div id="igBotQueueContainerContainer">
+            <div id="igBotQueueContainer">
+                <div id="igBotQueueContainerMessage">
+
+                    
+
+                </div>
+            </div>
+            <div id="igBotMediaQueueContainer"></div>
+        </div>
+
+        <div id="igBotQueueContainerButtons">
+            <div id="igBotStatusDiv" style="width: 100%;">Pronto para aceitar comandos!</div>
+            <br>
+            <div class="igBotInjectedButton flex7" id="btnGetAllUsersFollowers" title="Loads the current page's followers into the queue">
+Carregar seguidores da página atual</div>
+            <div class="igBotInjectedButton flex7" id="btnGetAllUsersFollowing" title="Loads accounts which the current page account is following into the queue">Carregar o seguinte da página atual</div>
+            <div class="igBotInjectedButton flex7" id="btnLoadPendingRequests" title="Load requests to follow private accounts which have not been approved or rejected yet (these count toward your follower total)">Carregar solicitações de seguimento pendentes</div>
+            <div class="igBotInjectedButton flex7" id="btnGetCommenters" title="Loads accounts which commented on the current pages media">Carregar comentadores</div>
+            <div class="igBotInjectedButton flex7" id="btnGetLikers" title="Loads accounts which liked the current pages media">Carregar Likers</div>
+            <div class="igBotInjectedButton flex7" id="btnLoadSavedQueue">Carregar fila</div>
+            <div class="igBotInjectedButton flex7" id="btnSaveQueueToStorage">Salvar fila</div>
+            <br>
+            <div class="igBotInjectedButton" id="btnSelectAll" title="Select all shown accounts">Selecionar tudo</div>
+            <div class="igBotInjectedButton" id="btnSelectNone" title="Select nothing">Selecione nenhum</div>
+            <div class="igBotInjectedButton" id="btnInvertSelection" title="Select the opposite of what is currently selected">Seleção invertida</div>
+            <div class="igBotInjectedButton" id="btnRemoveSelected" title="Remove all the selected accounts">Remover selecionado</div>
+            <!--      <br>
+        <div class="igBotInjectedButton" id="" title="Add selected accounts to the list of accounts never to follow">Add selected to blacklist</div>
+        <div class="igBotInjectedButton" id="" title="">Load blacklist</div>
+        <div class="igBotInjectedButton" id="" title="">Save blacklist</div> -->
+            <br>
+            <div class="igBotInjectedButton" id="btnGetAdditionalUserData" title="Gets more data about each account in queue: &#13; Private Status &#13; Follower Count &#13; Following Count &#13; Post Count">Obtenha mais dados</div>
+            <div class="igBotInjectedButton" id="btnAddToWhiteList" title="Add selected accounts to list of accounts never to UNfollow">Adicionar selecionados à lista de permissões</div>
+            <div class="igBotInjectedButton" id="btnViewWhiteList" title="">Carregar lista de permissões</div>
+            <div class="igBotInjectedButton" id="btnSaveWhiteList" title="Saves the whitelist to local storage and/or disk">Salvar lista de permissões
+</div>
+        </div>
+    </div>
+    <div id="igBotButtonContainer">
+        <div class="igBotFlexRow">
+            <a href="javascript:void(0);" id="iconFilter"></a>
+            <a href="javascript:void(0);" id="iconOptions"></a>
+            <a href="https://www.growbotforfollowers.com/" target="_blank" id="iconHelp">?</a>
+            <a href="mailto:growbotautomator@gmail.com" id="iconEmail">@</a>
+            <div class="igBotInjectedButton" id="btnHide">Esconder</div>
+        </div>
+        <div class="processQueueOptions">
+            <label for="cbFollowLikeLatestPics">
+                <input type="checkbox" id="cbFollowLikeLatestPics" /> Curtir o mais recente do usuário
+                <input type="number" value="1" step="1" min="0" max="12" id="numberFollowLikeLatestPics"></input>
+                Foto (s) ao seguir</label>
+            <div class="processQueueRadioButtons">
+                <label for="radioFollow">
+                    <input type="radio" id="radioFollow" name="queueAction" value="radioFollow" checked /> Segue
+
+                </label>
+                <label for="radioUnFollow">
+                    <input type="radio" id="radioUnFollow" name="queueAction" value="radioUnFollow" /> Deixar de seguir
+                </label>
+                <label for="radioNone">
+                    <input type="radio" id="radioNone" name="queueAction" value="radioNone" /> Curtir apenas
+                </label>
+            </div>
+        </div>
+        <div class="igBotInjectedButton" id="btnProcessQueue">Fila de processamento</div>
+        <br>
+        <div class="igBotInjectedButton" id="btnLikeHashtag">Curtir
+            <input type="number" value="10" id="numberToLikeHashtag" min="1"></input> Postagens da Hashtag da Página Atual</div>
+        <div class="igBotInjectedButton" id="btnLikeFeed">Like
+            <input type="number" value="10" id="numberToLike" min="1"></input> Postagens do feed</div>
+        <br>
+        <div class="igBotInjectedButton" id="btnStop">PARAR</div>
+        <details id="detailsConsole">
+            <summary>Log</summary>
+            <textarea id="txtConsole"></textarea>
+        </details>
+    </div>
+</div>
