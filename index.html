@@ -1,686 +1,951 @@
 <!DOCTYPE html>
 <html lang="en">
-
-  <head>
-
+<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <link href="https://fonts.googleapis.com/css?family=Raleway:100,300,400,500,700,900" rel="stylesheet">
 
-    <title>Lado A Solution</title>
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="">
+    <meta name="author" content="Anum Tech">
+
+    <!-- OG Meta Tags to improve the way the post looks when you share the page on LinkedIn, Facebook, Google+ -->
+	<meta property="og:site_name" content="Anum Tech" /> <!-- website name -->
+	<meta property="og:site" content="https://www.anum.tech/" /> <!-- website link -->
+	<meta property="og:title" content=""/> <!-- title shown in the actual shared post -->
+	<meta property="og:description" content="" /> <!-- description shown in the actual shared post -->
+	<meta property="og:image" content="" /> <!-- image link, make sure it's jpg -->
+	<meta property="og:url" content="" /> <!-- where do you want your post to link to -->
+	<meta property="og:type" content="article" />
+
+    <!-- Website Title -->
+    <title>Anum - Crie novas possibilidades!</title>
+
+    <!-- Styles -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700,700i" rel="stylesheet">
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/fontawesome-all.css" rel="stylesheet">
+    <link href="css/swiper.css" rel="stylesheet">
+	<link href="css/magnific-popup.css" rel="stylesheet">
+	<link href="css/styles.css" rel="stylesheet">
+
+	<!-- Favicon  -->
+    <link rel="icon" href="images/favicon.png">
+</head>
+<body data-spy="scroll" data-target=".fixed-top">
+
+    <!-- Preloader -->
+	<div class="spinner-wrapper">
+        <div class="spinner">
+            <div class="bounce1"></div>
+            <div class="bounce2"></div>
+            <div class="bounce3"></div>
+        </div>
+    </div>
+    <!-- end of preloader -->
+
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-md navbar-dark navbar-custom fixed-top">
+        <!-- Text Logo - Use this if you don't have a graphic logo -->
+        <!-- <a class="navbar-brand logo-text page-scroll" href="index.html">Leno</a> -->
+
+        <!-- Image Logo -->
+        <a class="navbar-brand logo-image" href="index.html"><img src="images/logo.png" alt="alternative"></a>
+
+        <!-- Mobile Menu Toggle Button -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-awesome fas fa-bars"></span>
+            <span class="navbar-toggler-awesome fas fa-times"></span>
+        </button>
+        <!-- end of mobile menu toggle button -->
+
+        <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link page-scroll" href="#header">HOME <span class="sr-only">(current)</span></a>
+                </li>
+                <!-- Dropdown Menu -->
+                <li class="nav-item">
+                    <a class="nav-link page-scroll" href="#preview">APRESENTAÇÂO</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link page-scroll" href="#features">RECURSOS</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link page-scroll" href="#details">COMO FUNCIONA</a>
+                </li>
+
+                <!-- end of dropdown menu -->
+
+
+
+                <!-- Dropdown Menu -
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle page-scroll" href="" id="navbarDropdown" role="button" aria-haspopup="true" aria-expanded="false">DETALHES</a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="terms-conditions.html"><span class="item-text">TERMOS E CONDIÇÕES</span></a>
+                        <div class="dropdown-items-divide-hr"></div>
+                        <a class="dropdown-item" href="privacy-policy.html"><span class="item-text">POLÍTICA DE PRIVACIDADE</span></a>
+                    </div>
+                </li>
+                <!-- end of dropdown menu -->
+<!--
+                <li class="nav-item">
+                    <a class="nav-link page-scroll" href="">SUPORTE</a>
+                </li>-->
+                <li class="nav-item">
+                    <a class="nav-link page-scroll" href="">BLOG</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link page-scroll" href="#contact">CONTATO</a>
+                <!--</li>
+                <li class="nav-item">
+                    <a class="nav-link page-scroll" href="#contact">ÁREA DO CLIENTE</a>
+                </li>-->
+            </ul>
+            <span class="nav-item social-icons">
+                <span class="fa-stack">
+                    <a href="#your-link">
+                        <i class="fas fa-circle fa-stack-2x"></i>
+                        <i class="fab fa-facebook-f fa-stack-1x"></i>
+                    </a>
+                </span>
+                <span class="fa-stack">
+                    <a href="#your-link">
+                        <i class="fas fa-circle fa-stack-2x"></i>
+                        <i class="fab fa-instagram fa-stack-1x"></i>
+                    </a>
+                </span>
+                <span class="fa-stack">
+                    <a href="#your-link">
+                        <i class="fas fa-circle fa-stack-2x"></i>
+                        <i class="fab fa-linkedin fa-stack-1x"></i>
+                    </a>
+                </span>
+            </span>
+        </div>
+    </nav> <!-- end of navbar -->
+    <!-- end of navbar -->
+
+
+    <!-- Header -->
+    <header id="header" class="header">
+        <div class="header-content">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="text-container">
+                            <h1>A SOLUÇÃO PERFEITA PARA <span id="js-rotating">START UP'S, COMÉRCIOS, SERVIÇOS, LOJAS, FINTECH'S, E-COMMERCE'S, RESTAURANTES, TODOS!</span></h1>
+                            <p class="p-large">Uma nova forma de escalar seu negócio. Aumente vendas, cresça e fidelize clientes de uma só vez.Tenha seu própio ecossistema de crescimento.</p>
+                            <a class="btn-solid-lg page-scroll" href="https://share.hsforms.com/19ZOAmqNTSkaQyLwk0G-ZKQbze2j"><i class="fa-solid fa-mug-hot"></i>EQUIPE DE VENDAS</a>
+                            <!--<a class="btn-solid-lg page-scroll" href="#your-link"><i class="fab fa-google-play"></i>PLAY STORE</a>-->
+                        </div>
+                    </div> <!-- end of col -->
+                    <div class="col-lg-6">
+                        <div class="image-container">
+                            <img class="img-fluid" src="images/header-iphone.png" alt="alternative">
+                        </div> <!-- end of image-container -->
+                    </div> <!-- end of col -->
+                </div> <!-- end of row -->
+            </div> <!-- end of container -->
+        </div> <!-- end of header-content -->
+    </header> <!-- end of header -->
+    <!-- end of header -->
+    <!-- Video -->
+    <div id="preview" class="basic-1">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h2>Escale seu negócio com a Anum</h2>
+                    <div class="p-heading p-large">Venha com a gente e crie novas possibilidades de crescimento para seu negócio. Enquanto melhora suas vendas e fideliza seus clientes. Com a Anum, um mundo inteiro de possibilidades está ao seu alcance.</div>
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+            <div class="row">
+                <div class="col-lg-12">
+
+                    <!-- Video Preview -->
+                    <div class="image-container">
+                        <div class="video-wrapper">
+                            <a class="popup-youtube" href="#" data-effect="fadeIn">
+                                <img class="img-fluid" src="images/video-frame.jpg" alt="alternative">
+                                <span class="video-play-button">
+                                    <span></span>
+                                </span>
+                            </a>
+                        </div> <!-- end of video-wrapper -->
+                    </div> <!-- end of image-container -->
+                    <!-- end of video preview -->
+
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of basic-1 -->
+    <!-- end of video -->
 
 <!--
-SOFTY PINKO
-https://templatemo.com/tm-535-softy-pinko
+    <!-- Testimonials
+    <div class="slider-1">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+
+                    <!-- Card Slider
+                    <div class="slider-container">
+                        <div class="swiper-container card-slider">
+                            <div class="swiper-wrapper">
+
+                                <!-- Slide
+                                <div class="swiper-slide">
+                                    <div class="card">
+                                        <img class="card-image" src="images/testimonial-1.jpg" alt="alternative">
+                                        <div class="card-body">
+                                            <p class="testimonial-text">I just finished my trial period and was so amazed with the support and results that I purchased Leno.</p>
+                                            <p class="testimonial-author">Jude Thorn - Designer</p>
+                                        </div>
+                                    </div>
+                                </div> <!-- end of swiper-slide
+                                <!-- end of slide
+
+                                <!-- Slide
+                                <div class="swiper-slide">
+                                    <div class="card">
+                                        <img class="card-image" src="images/testimonial-2.jpg" alt="alternative">
+                                        <div class="card-body">
+                                            <p class="testimonial-text">I don't know how I managed to get work done without Leno. The speed of this application is amazing!</p>
+                                            <p class="testimonial-author">Roy Smith - Developer</p>
+                                        </div>
+                                    </div>
+                                </div> <!-- end of swiper-slide
+                                <!-- end of slide
+
+                                <!-- Slide
+                                <div class="swiper-slide">
+                                    <div class="card">
+                                        <img class="card-image" src="images/testimonial-3.jpg" alt="alternative">
+                                        <div class="card-body">
+                                            <p class="testimonial-text">This app has the potential of becoming a mandatory tool in every marketer's day to day operations.</p>
+                                            <p class="testimonial-author">Marsha Singer - Marketer</p>
+                                        </div>
+                                    </div>
+                                </div> <!-- end of swiper-slide
+                                <!-- end of slide
+
+                                <!-- Slide
+                                <div class="swiper-slide">
+                                    <div class="card">
+                                        <img class="card-image" src="images/testimonial-4.jpg" alt="alternative">
+                                        <div class="card-body">
+                                            <p class="testimonial-text">Searching for a great marketing automation app was difficult but thankfully I found Leno.</p>
+                                            <p class="testimonial-author">Tim Shaw - Designer</p>
+                                        </div>
+                                    </div>
+                                </div> <!-- end of swiper-slide
+                                <!-- end of slide
+
+                                <!-- Slide
+                                <div class="swiper-slide">
+                                    <div class="card">
+                                        <img class="card-image" src="images/testimonial-5.jpg" alt="alternative">
+                                        <div class="card-body">
+                                            <p class="testimonial-text">Leno's support team is amazing. They've helped me with some issues and I am so grateful to them.</p>
+                                            <p class="testimonial-author">Lindsay Spice - Marketer</p>
+                                        </div>
+                                    </div>
+                                </div> <!-- end of swiper-slide
+                                <!-- end of slide
+
+                                <!-- Slide
+                                <div class="swiper-slide">
+                                    <div class="card">
+                                        <img class="card-image" src="images/testimonial-6.jpg" alt="alternative">
+                                        <div class="card-body">
+                                            <p class="testimonial-text">Who would have thought that Leno can provide such amazing results in just a few weeks of use</p>
+                                            <p class="testimonial-author">Ann Black - Developer</p>
+                                        </div>
+                                    </div>
+                                </div> <!-- end of swiper-slide
+                                <!-- end of slide
+
+                            </div> <!-- end of swiper-wrapper
+
+                            <!-- Add Arrows -->
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
+                            <!-- end of add arrows -->
+
+                        </div> <!-- end of swiper-container
+                    </div> <!-- end of slider-container
+                    <!-- end of card slider
+
+                </div> <!-- end of col
+            </div> <!-- end of row
+        </div> <!-- end of container
+    </div> <!-- end of slider-1
+    <!-- end of testimonials
+
 -->
-
-    <!-- Additional CSS Files -->
-    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
-
-    <link rel="stylesheet" type="text/css" href="assets/css/font-awesome.css">
-
-    <link rel="stylesheet" href="assets/css/templatemo-softy-pinko.css">
-
-    </head>
-
-    <body>
-      <!-- Start of HubSpot Embed Code -->
-      <script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/7828993.js"></script>
-      <!-- End of HubSpot Embed Code -->
-
-    <!-- ***** Preloader Start ***** -->
-    <div id="preloader">
-        <div class="jumper">
-            <div></div>
-            <div></div>
-            <div></div>
-        </div>
-    </div>
-    <!-- ***** Preloader End ***** -->
-
-
-    <!-- ***** Header Area Start ***** -->
-    <header class="header-area header-sticky">
+    <!-- Features -->
+    <div id="features" class="tabs">
         <div class="container">
             <div class="row">
-                <div class="col-12">
-                    <nav class="main-nav">
-                        <!-- ***** Logo Start ***** -->
-                        <a href="#" class="logo">
-                            <img src="assets/images/logo.png" alt="Softy Pinko"/>
-                        </a>
-                        <!-- ***** Logo End ***** -->
-                        <!-- ***** Menu Start ***** -->
-                        <ul class="nav">
-                            <li><a href="#welcome" class="active">Home</a></li>
-                            <li><a href="#features">Sobre</a></li>
-                            <li><a href="#work-process">Serviços</a></li>
-                            <!--<li><a href="#testimonials">Testimonials</a></li>-->
-                            <li><a href="#pricing-plans">Planos</a></li>
-                            <!--<li><a href="#blog">Blog Entries</a></li>-->
-                            <!--<li><a href="#contact-us">Nos contate!</a></li>-->
-                        </ul>
-                        <a class='menu-trigger'>
-                            <span>Menu</span>
-                        </a>
-                        <!-- ***** Menu End ***** -->
-                    </nav>
-                </div>
-            </div>
-        </div>
-    </header>
-    <!-- ***** Header Area End ***** -->
+                <div class="col-lg-12">
+                    <h2>Recursos</h2>
+                    <div class="p-heading p-large">Somos a peça de encaixe perfeito para seu negócio.</div>
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+            <div class="row">
 
-    <!-- ***** Welcome Area Start ***** -->
-    <div class="welcome-area" id="welcome">
+                <!-- Tabs Links -->
+                <ul class="nav nav-tabs" id="lenoTabs" role="tablist">
+                    <li class="nav-item">
+                        <a class="nav-link active" id="nav-tab-1" data-toggle="tab" href="#tab-1" role="tab" aria-controls="tab-1" aria-selected="true"><i class="fa fa-leaf" aria-hidden="true"></i> Ecossistema</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="nav-tab-2" data-toggle="tab" href="#tab-2" role="tab" aria-controls="tab-2" aria-selected="false"><i class="fa fa-life-ring"></i> Suporte</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="nav-tab-3" data-toggle="tab" href="#tab-3" role="tab" aria-controls="tab-3" aria-selected="false"><i class="fa fa-star"></i> Beneficíos</a>
+                    </li>
+                </ul>
+                <!-- end of tabs links -->
 
-        <!-- ***** Header Text Start ***** -->
-        <div class="header-text">
+
+                <!-- Tabs Content-->
+                <div class="tab-content" id="lenoTabsContent">
+
+                    <!-- Tab -->
+                    <div class="tab-pane fade show active" id="tab-1" role="tabpanel" aria-labelledby="tab-1">
+                        <div class="container">
+                            <div class="row">
+
+                                <!-- Icon Cards Pane -->
+                                <div class="col-lg-4">
+                                    <div class="card left-pane first">
+                                        <div class="card-body">
+                                            <div class="text-wrapper">
+                                                <h4 class="card-title">Magic Lab </h4>
+                                                <p>Pesquisa de Mercado, Mapeamento de Público Alvo, Desenvolvimento de Idéias e Design de Produto. </p>
+                                            </div>
+                                            <div class="card-icon">
+                                                <i class="fa far fa-flask" aria-hidden="true"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card left-pane">
+                                        <div class="card-body">
+                                            <div class="text-wrapper">
+                                                <h4 class="card-title"> Creator Studio</h4>
+                                                <p>Suporte para Desenvolvimento de Conteúdo e Agendamento.</p>
+                                            </div>
+                                            <div class="card-icon">
+                                                <i class="far fa-calendar-check"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card left-pane">
+                                        <div class="card-body">
+                                            <div class="text-wrapper">
+                                                <h4 class="card-title">Cultivo</h4>
+                                                <p>Interação direta com o cliente e processo de fidelização.</p>
+                                            </div>
+                                            <div class="card-icon">
+                                                <i class="fa far fa-leaf"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- end of icon cards pane -->
+
+                                <!-- Image Pane -->
+                                <div class="col-lg-4">
+                                    <img class="img-fluid" src="images/features-iphone-1.png" alt="alternative">
+                                </div>
+                                <!-- end of image pane -->
+
+                                <!-- Icon Cards Pane -->
+                                <div class="col-lg-4">
+                                    <div class="card right-pane first">
+                                        <div class="card-body">
+                                            <div class="card-icon">
+                                                <i class="fa far fa-file" aria-hidden="true"></i>
+                                            </div>
+                                            <div class="text-wrapper">
+                                                <h4 class="card-title">Relatório</h4>
+                                                <p>Relatório gerencial completo.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card right-pane">
+                                        <div class="card-body">
+                                            <div class="card-icon">
+                                                <i class="fa far fa-user-circle" aria-hidden="true"></i>
+                                            </div>
+                                            <div class="text-wrapper">
+                                                <h4 class="card-title">Consultoria</h4>
+                                                <p>Consultoria especializada e alinhada as estratégias do negócio, através do contato direto com o empresário</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card right-pane">
+                                        <div class="card-body">
+                                            <div class="card-icon">
+                                              <i class="fa far fa-puzzle-piece" aria-hidden="true"></i>
+
+                                            </div>
+                                            <div class="text-wrapper">
+                                                <h4 class="card-title">Suporte Anum</h4>
+                                                <p>Suporte centralizado e apoiado em sua plataforma de vendas e atendimento.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- end of icon cards pane -->
+
+                            </div> <!-- end of row -->
+                        </div> <!-- end of container -->
+                    </div> <!-- end of tab-pane -->
+                    <!-- end of tab -->
+
+                    <!-- Tab -->
+                    <div class="tab-pane fade" id="tab-2" role="tabpanel" aria-labelledby="tab-2">
+                        <div class="container">
+                            <div class="row">
+
+                                <!-- Image Pane -->
+                                <div class="col-md-4">
+                                    <img class="img-fluid" src="images/features-iphone-2.png" alt="alternative">
+                                </div>
+                                <!-- end of image pane -->
+
+                                <!-- Text And Icon Cards Area -->
+                                <div class="col-md-8">
+                                    <div class="text-area">
+                                        <h3>Resolvendo tudo pra você</h3>
+                                        <p>Atendimento e suporte focado na resolução do seu problema!</p>
+                                    </div> <!-- end of text-area -->
+
+                                    <div class="icon-cards-area">
+                                            <div class="card">
+                                                <div class="card-icon">
+                                                    <i class="fa far fa-coffee"></i>
+                                                </div>
+                                                <div class="card-body">
+                                                    <h4 class="card-title">Atendimento Personalizado</h4>
+                                                    <p>Comunicação descomplicada e direcionada a sua dificuldade.</p>
+                                                </div>
+                                            </div>
+                                            <div class="card">
+                                                <div class="card-icon">
+                                                    <i class="fa far fa-exclamation-circle" aria-hidden="true"></i>
+                                                </div>
+                                                <div class="card-body">
+                                                    <h4 class="card-title">Central de Ajuda</h4>
+                                                    <p>Suporte técnico integrado com total foco em lhe ajudar no menor tempo possível.</p>
+                                                </div>
+                                            </div>
+                                            <div class="card">
+                                                <div class="card-icon">
+                                                  <i class="fa far fa-handshake" aria-hidden="true"></i>
+                                                </div>
+                                                <div class="card-body">
+                                                    <h4 class="card-title">Portabilidade e Colab</h4>
+                                                    <p>Trabalhamos na migração ou em colaboração com outros serviços assinados por você.</p>
+                                                </div>
+                                            </div>
+                                            <div class="card">
+                                                <div class="card-icon">
+                                                    <i class="fa far fa-flask"></i>
+                                                </div>
+                                                <div class="card-body">
+                                                    <h4 class="card-title">Magic Lab</h4>
+                                                    <p>Desenvolvimento de projetos, criação de conteúdo e estratégias exclusivas pra sua empresa!</p>
+                                                </div>
+                                            </div>
+                                    </div> <!-- end of icon cards area -->
+                                </div> <!-- end of col-md-8 -->
+                                <!-- end of text and icon cards area -->
+
+                            </div> <!-- end of row -->
+                        </div> <!-- end of container -->
+                    </div> <!-- end of tab-pane -->
+                    <!-- end of tab -->
+
+                    <!-- Tab -->
+                    <div class="tab-pane fade" id="tab-3" role="tabpanel" aria-labelledby="tab-3">
+                        <div class="container">
+                            <div class="row">
+
+                                <!-- Text And Icon Cards Area -->
+                                <div class="col-md-8">
+                                    <div class="icon-cards-area">
+                                        <div class="card">
+                                            <div class="card-icon">
+                                                <i class="fa far fa-tag"></i>
+                                            </div>
+                                            <div class="card-body">
+                                                <h4 class="card-title">Melhore seu Ticket Médio</h4>
+                                                <p>Aumente suas vendas e melhore seu ticket médio.</p>
+                                            </div>
+                                        </div>
+                                        <div class="card">
+                                            <div class="card-icon">
+                                                <i class="fa far fa-recycle"></i>
+                                            </div>
+                                            <div class="card-body">
+                                                <h4 class="card-title">Crie Fidelização</h4>
+                                                <p>Mantenha sempre por perto quem ama seu produto e negócio.</p>
+                                            </div>
+                                        </div>
+                                        <div class="card">
+                                            <div class="card-icon">
+                                                <i class="fa far fa-shopping-bag"></i>
+                                            </div>
+                                            <div class="card-body">
+                                                <h4 class="card-title">Entenda o Mercado</h4>
+                                                <p>Esteja sempre um passo a frente conhecendo o mercado e suas necessidades.</p>
+                                            </div>
+                                        </div>
+                                        <div class="card">
+                                            <div class="card-icon">
+                                                <i class="fa far fa-percent"></i>
+                                            </div>
+                                            <div class="card-body">
+                                                <h4 class="card-title">Reduza Custos</h4>
+                                                <p>Reduza custos e fique livre pra investir em outros setores de sua empresa.</p>
+                                            </div>
+                                        </div>
+                                    </div> <!-- end of icon cards area -->
+
+                                    <div class="text-area">
+                                        <h3>O melhor pro seu negócio em um só lugar!</h3>
+                                        <p>Com a Anum você pode muito mais, tenha a sua disposição a melhor solução para que seu negócio cresça. Escale seu negócio reduzindo  o investimento e criando uma maior aproximação com seu cliente. Pense diferente, seja diferente, <a class="turquoise" href="https://share.hsforms.com/19ZOAmqNTSkaQyLwk0G-ZKQbze2j">seja Anum !</a>.</p>
+                                    </div> <!-- end of text-area -->
+                                </div> <!-- end of col-md-8 -->
+                                <!-- end of text and icon cards area -->
+
+                                <!-- Image Pane -->
+                                <div class="col-md-4">
+                                    <img class="img-fluid" src="images/features-iphone-3.png" alt="alternative">
+                                </div>
+                                <!-- end of image pane -->
+
+                            </div> <!-- end of row -->
+                        </div> <!-- end of container -->
+                    </div><!-- end of tab-pane -->
+                    <!-- end of tab -->
+
+                </div> <!-- end of tab-content -->
+                <!-- end of tabs content -->
+
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of tabs -->
+    <!-- end of features -->
+
+
+
+
+    <!-- Details 1 -->
+    <div id="details" class="basic-2">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <img class="img-fluid" src="images/details-1-iphone.png" alt="alternative">
+                </div> <!-- end of col -->
+                <div class="col-lg-6">
+                    <div class="text-container">
+                        <h3>O que a Anum pode fazer pelo seu negócio?</h3>
+                        <p> Funcionamos como um setor de sua empresa ou negócio operando suas redes sociais e ferramentas online, utilizando técnicas que possibilitam a criação de ecossistemas capazes de sustentar um crescimento constante de audiência, engajamento e vendas. Reduzindo o custo com investimento de marketing e conteúdo patrocinado, permitimos que você escale seu negócio enquanto cria fidelização com seu cliente por meio da interação direta. </p>
+                        <a class="btn-solid-reg popup-with-move-anim" href="#details-lightbox-1">SAIBA MAIS</a>
+                    </div> <!-- end of text-container -->
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of basic-2 -->
+    <!-- end of details 1 -->
+
+
+    <!-- Details 2 -->
+    <div class="basic-3">
+        <div class="second">
             <div class="container">
                 <div class="row">
-                    <div class="offset-xl-3 col-xl-6 offset-lg-2 col-lg-8 col-md-12 col-sm-12">
-                        <h1></h1>
-                        <p></p>
-                        <p></p>
-                        <p></p>
-                        <h1></h1>
-                        <a href="#features" class="main-button-slider"> Start !</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- ***** Header Text End ***** -->
-    </div>
-    <!-- ***** Welcome Area End ***** -->
+                    <div class="col-lg-6">
+                        <div class="text-container">
+                            <h3>Uma equipe para chamar de sua!</h3>
+                            <p>Nossa equipe opera de forma agregada e conectada à sua empresa, rotina e idéias. Trabalhamos lado a lado com você, levando em consideração suas principais dificuldades, pontos fortes e dados do mercado, para que sua empresa tenha a melhor experiência de crescimento e credibilização no mercado através da internet.</p>
+                            <a class="btn-solid-reg popup-with-move-anim" href="#details-lightbox-2">TIME DE VENDAS</a>
+                        </div> <!-- end of text-container -->
+                    </div> <!-- end of col -->
+                    <div class="col-lg-6">
+                        <img class="img-fluid" src="images/details-2-iphone.png" alt="alternative">
+                    </div> <!-- end of col -->
+                </div> <!-- end of row -->
+            </div> <!-- end of container -->
+        </div> <!-- end of second -->
+    </div> <!-- end of basic-3 -->
+    <!-- end of details 2 -->
 
-    <!-- ***** Features Small Start ***** -->
-    <section class="section home-feature">
+
+    <!-- Details Lightboxes -->
+	<!-- Lightbox -->
+	<div id="details-lightbox-1" class="lightbox-basic zoom-anim-dialog mfp-hide">
+		<div class="row">
+			<button title="Close (Esc)" type="button" class="mfp-close x-button">×</button>
+			<div class="col-lg-6">
+				<img class="img-fluid" src="images/details-lightbox-1.png" alt="alternative">
+			</div>
+			<div class="col-lg-6">
+				<h3>Ecossistema de Crescimento Anum</h3>
+				<hr>
+                <p>Uma nova forma de crescer e escalar seu negócio. </p>
+                <h4>Como funciona? </h4>
+                <p>Trata-se de uma infraestrutura constituída de estratégias,ferramentas e processos que possibilitam o crescimento e escalonamento constante de um negócio por meio da definição e interação direta com o público alvo a ser atingido. Atribuimos a esse processo o nome CULTIVO! </p>
+                <p>Agende uma apresentação, e saiba exatamente o que podemos fazer por você e seu negócio.</p>
+
+				<a class="btn-solid-reg" href="http://anum.hubspotpagebuilder.com/escale-seu-negócio-com-a-anum">APRESENTAÇÂO</a> <a class="btn-outline-reg mfp-close as-button" href="#details">VOLTAR</a>
+			</div>
+		</div> <!-- end of row -->
+    </div> <!-- end of lightbox-basic -->
+    <!-- end of lightbox -->
+
+    <!-- Lightbox -->
+    <div id="details-lightbox-2" class="lightbox-basic zoom-anim-dialog mfp-hide">
+		<div class="row">
+			<button title="Close (Esc)" type="button" class="mfp-close x-button">×</button>
+			<div class="col-lg-6">
+				<img class="img-fluid" src="images/details-lightbox-2.png" alt="alternative">
+			</div>
+			<div class="col-lg-6">
+				<h3>Trabalhando juntos pelos seu sucesso!</h3>
+				<hr>
+                <p>Uma equipe engajada em trabalhar exclusivamente pelo sucesso do seu negócio. Lado a lado com você e suas idéias!</p>
+                <h4>Pense diferente</h4>
+                <p>Tenha nossa equipe agregada a sua empresa aumentando sua produtividade enquanto recebe todo o suporte necessário de apoio a suas idéias.</p>
+                <p>Fale com nosso time de vendas. Alcance novas possibilidades.</p>
+
+				<a class="btn-solid-reg" href="https://share.hsforms.com/19ZOAmqNTSkaQyLwk0G-ZKQbze2j">COMERCIAL</a> <a class="btn-outline-reg mfp-close as-button" href="#details">VOLTAR</a>
+			</div>
+		</div> <!-- end of row -->
+    </div> <!-- end of lightbox-basic -->
+    <!-- end of lightbox -->
+    <!-- end of details lightboxes -->
+
+
+    <!-- Screenshots
+    <div class="slider-2">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <div class="row">
-                        <!-- ***** Features Small Item Start ***** -->
-                        <div class="col-lg-4 col-md-6 col-sm-6 col-12" data-scroll-reveal="enter bottom move 50px over 0.6s after 0.2s">
-                            <div class="features-small-item">
-                                <div class="icon">
-                                    <i><img src="assets/images/featured-item-01.png" alt=""></i>
+
+                    <!-- Image Slider
+                    <div class="slider-container">
+                        <div class="swiper-container image-slider">
+                            <div class="swiper-wrapper">
+
+                                <!-- Slide
+                                <div class="swiper-slide">
+                                    <a href="images/screenshot-1.png" class="popup-link" data-effect="fadeIn">
+                                        <img class="img-fluid" src="images/screenshot-1.png" alt="alternative">
+                                    </a>
                                 </div>
-                                <h5 class="features-title">Estratégia de sucesso </h5>
-                                <p>Soluções valem mais que mil palavaras. Por isso nós do Lado A possuimos a melhor estratégia para crescimento de suas redes sociais! </p>
-                            </div>
-                        </div>
-                        <!-- ***** Features Small Item End ***** -->
+                                <!-- end of slide
 
-                        <!-- ***** Features Small Item Start ***** -->
-                        <div class="col-lg-4 col-md-6 col-sm-6 col-12" data-scroll-reveal="enter bottom move 50px over 0.6s after 0.4s">
-                            <div class="features-small-item">
-                                <div class="icon">
-                                    <i><img src="assets/images/featured-item-02.png" alt=""></i>
+                                <!-- Slide
+                                <div class="swiper-slide">
+                                    <a href="images/screenshot-2.png" class="popup-link" data-effect="fadeIn">
+                                        <img class="img-fluid" src="images/screenshot-2.png" alt="alternative">
+                                    </a>
                                 </div>
-                                <h5 class="features-title">A melhor relação com você!</h5>
-                                <p>Melhor do que cliente, consideramos você nosso parceiro e cultivamos relações de sucesso.</p>
-                            </div>
-                        </div>
-                        <!-- ***** Features Small Item End ***** -->
+                                <!-- end of slide
 
-                        <!-- ***** Features Small Item Start ***** -->
-                        <div class="col-lg-4 col-md-6 col-sm-6 col-12" data-scroll-reveal="enter bottom move 50px over 0.6s after 0.6s">
-                            <div class="features-small-item">
-                                <div class="icon">
-                                    <i><img src="assets/images/featured-item-03.png" alt=""></i>
+                                <!-- Slide
+                                <div class="swiper-slide">
+                                    <a href="images/screenshot-3.png" class="popup-link" data-effect="fadeIn">
+                                        <img class="img-fluid" src="images/screenshot-3.png" alt="alternative">
+                                    </a>
                                 </div>
-                                <h5 class="features-title">Muito mais que marketing!</h5>
-                                <p>Dispomos de uma gama variada de produtos e serviços que temos a oferecer à você. E colocamos a mão na massa para que você atinja seus objetivos.</p>
-                            </div>
-                        </div>
-                        <!-- ***** Features Small Item End ***** -->
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- ***** Features Small End ***** -->
+                                <!-- end of slide
 
-    <!-- ***** Features Big Item Start ***** -->
-    <section class="section padding-top-70 padding-bottom-0" id="features">
+                                <!-- Slide
+                                <div class="swiper-slide">
+                                    <a href="images/screenshot-4.png" class="popup-link" data-effect="fadeIn">
+                                        <img class="img-fluid" src="images/screenshot-4.png" alt="alternative">
+                                    </a>
+                                </div>
+                                <!-- end of slide
+
+                                <!-- Slide -
+                                <div class="swiper-slide">
+                                    <a href="images/screenshot-5.png" class="popup-link" data-effect="fadeIn">
+                                        <img class="img-fluid" src="images/screenshot-5.png" alt="alternative">
+                                    </a>
+                                </div>
+                                <!-- end of slide -->
+
+                                <!-- Slide
+                                <div class="swiper-slide">
+                                    <a href="images/screenshot-6.png" class="popup-link" data-effect="fadeIn">
+                                        <img class="img-fluid" src="images/screenshot-6.png" alt="alternative">
+                                    </a>
+                                </div>
+                                <!-- end of slide
+
+                                <!-- Slide
+                                <div class="swiper-slide">
+                                    <a href="images/screenshot-7.png" class="popup-link" data-effect="fadeIn">
+                                        <img class="img-fluid" src="images/screenshot-7.png" alt="alternative">
+                                    </a>
+                                </div>
+                                <!-- end of slide
+
+                                <!-- Slide
+                                <div class="swiper-slide">
+                                    <a href="images/screenshot-8.png" class="popup-link" data-effect="fadeIn">
+                                        <img class="img-fluid" src="images/screenshot-8.png" alt="alternative">
+                                    </a>
+                                </div>
+                                <!-- end of slide
+
+                                <!-- Slide
+                                <div class="swiper-slide">
+                                    <a href="images/screenshot-9.png" class="popup-link" data-effect="fadeIn">
+                                        <img class="img-fluid" src="images/screenshot-9.png" alt="alternative">
+                                    </a>
+                                </div>
+                                <!-- end of slide
+
+                                <!-- Slide
+                                <div class="swiper-slide">
+                                    <a href="images/screenshot-10.png" class="popup-link" data-effect="fadeIn">
+                                        <img class="img-fluid" src="images/screenshot-10.png" alt="alternative">
+                                    </a>
+                                </div>
+                                <!-- end of slide
+
+                            </div> <!-- end of swiper-wrapper -->
+
+                            <!-- Add Arrows
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
+                            <!-- end of add arrows
+
+                        </div> <!-- end of swiper-container
+                    </div> <!-- end of slider-container
+                    <!-- end of image slider
+
+                </div> <!-- end of col
+            </div> <!-- end of row
+        </div> <!-- end of container
+    </div> <!-- end of slider-2
+    <!-- end of screenshots -->
+
+
+    <!-- Download -->
+    <div class="basic-4">
         <div class="container">
             <div class="row">
-                <div class="col-lg-5 col-md-12 col-sm-12 align-self-center" data-scroll-reveal="enter left move 30px over 0.6s after 0.4s">
-                    <img src="assets/images/left-image.png" class="rounded img-fluid d-block mx-auto" alt="App">
-                </div>
-                <div class="col-lg-1"></div>
-                <div class="col-lg-6 col-md-12 col-sm-12 align-self-center mobile-top-fix">
-                    <div class="left-heading">
-                        <h2 class="section-title">Astronautas do Marketing Reverso!</h2>
-                    </div>
-                    <div class="left-text">
-                        <p>Somos os astronautas dominando as constelações do #MARKETINGREVERSO. Nosso time aliado ás nossas modernas e variadas técnicas colocam sua rede social para decolar! Descontruindo o velho marketing, produzimos o novo padrão de publicidade que engaja, além de soluções tecnológicas para sua empresa.</p>
-                    </div>
-                </div>
-            </div>
+                <div class="col-lg-6 col-xl-5">
+                    <div class="text-container">
+                        <h2>Seja<span class="blue"> Anum!</span></h2>
+                        <p class="p-large">Para todos os tipos de negócios, para todos os tipos de pessoas. </p>
+                        <a class="btn-solid-lg" href=""><i class=""></i>EQUIPE DE VENDAS</a>
+                        <!--<a class="btn-solid-lg" href="#your-link"><i class="fab fa-google-play"></i>PLAY STORE</a>-->
+                    </div> <!-- end of text-container -->
+                </div> <!-- end of col -->
+                <div class="col-lg-6 col-xl-7">
+                    <div class="image-container">
+                        <img class="img-fluid" src="images/download.png" alt="alternative">
+                    </div> <!-- end of img-container -->
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of basic-4 -->
+    <!-- end of download -->
+
+
+    <!-- Statistics
+    <div class="counter">
+        <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <div class="hr"></div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- ***** Features Big Item End ***** -->
 
-    <!-- ***** Features Big Item Start ***** -->
-    <section class="section padding-bottom-100">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6 col-md-12 col-sm-12 align-self-center mobile-bottom-fix">
-                    <div class="left-heading">
-                        <h2 class="section-title"> O que o LADO A pode fazer hoje por você?</h2>
-                    </div>
-                    <div class="left-text">
-                        <p>Temos a idéia perfeita para você e sua empresa crescer nas redes sociais e aumentar suas vendas. Nosso time comercial aguarda ansiosamente seu contato! Venha para o futuro, seja o futuro ! </p>
-                    </div>
-                </div>
-                <div class="col-lg-1"></div>
-                <div class="col-lg-5 col-md-12 col-sm-12 align-self-center mobile-bottom-fix-big" data-scroll-reveal="enter right move 30px over 0.6s after 0.4s">
-                    <img src="assets/images/right-image.png" class="rounded img-fluid d-block mx-auto" alt="App">
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- ***** Features Big Item End ***** -->
-
-    <!-- ***** Home Parallax Start *****-->
-    <section class="mini" id="work-process">
-        <div class="mini-content">
-            <div class="container">
-                <div class="row">
-                    <div class="offset-lg-3 col-lg-6">
-                        <div class="info">
-                            <h1>Conheça alguns dos nossos serviços</h1>
-                            <p>Realizamos diversos serviços e projetos que podem auxiliar a sua empresa no alcance da estratégia correta.</p>
+                    <!-- Counter
+                    <div id="counter">
+                        <div class="cell">
+                            <div class="counter-value number-count" data-count="231">1</div>
+                            <p class="counter-info">Happy Users</p>
+                        </div>
+                        <div class="cell">
+                            <div class="counter-value number-count" data-count="85">1</div>
+                            <p class="counter-info">Issues Solved</p>
+                        </div>
+                        <div class="cell">
+                            <div class="counter-value number-count" data-count="59">1</div>
+                            <p class="counter-info">Good Reviews</p>
+                        </div>
+                        <div class="cell">
+                            <div class="counter-value number-count" data-count="127">1</div>
+                            <p class="counter-info">Case Studies</p>
                         </div>
                     </div>
-                </div>
+                    <!-- end of counter
 
-                <!--***** Mini Box Start *****-->
-                <div class="row">
-                    <div class="col-lg-2 col-md-3 col-sm-6 col-6">
-                        <a href="#" class="mini-box">
-                            <i><img src="assets/images/work-process-item-01.png" alt=""></i>
-                            <strong>Artes visuais</strong>
-                            <span>* Identidade visual</span>
-                            <span>* Artes para postagens</span>
-                            <span>* Apresentações digitais</span>
-                        </a>
-                    </div>
-                    <div class="col-lg-2 col-md-3 col-sm-6 col-6">
-                        <a href="#" class="mini-box">
-                            <i><img src="assets/images/work-process-item-01.png" alt=""></i>
-                            <strong>Materiais gráficos</strong>
-                            <span>* Panfletos</span>
-                              <span>* Cardápios</span>
-                                <span>* Cartazes</span>
+                </div> <!-- end of col
+            </div> <!-- end of row
+        </div> <!-- end of container
+    </div> <!-- end of counter
+    <!-- end of statistics -->
 
-                                <span>* Cartão de visitas</span>
-                        </a>
-                    </div>
-                    <div class="col-lg-2 col-md-3 col-sm-6 col-6">
-                        <a href="#" class="mini-box">
-                            <i><img src="assets/images/work-process-item-01.png" alt=""></i>
-                            <strong>Marketing digital</strong>
-                            <span>* Capanhas Social Media</span>
-                            <span>* Consultoria</span>
-                            <span>* E-mail Marketing</span>
-                        </a>
-                    </div>
-                    <div class="col-lg-2 col-md-3 col-sm-6 col-6">
-                        <a href="#" class="mini-box">
-                            <i><img src="assets/images/work-process-item-01.png" alt=""></i>
-                            <strong>Web e Mobile</strong>
-                            <span>* Sites</span>
-                            <span>* APP Android</span>
-                            <span>* Landing Pages</span>
-                            <span>* Blog</span>
-                            <span>* E-Commerce</span>
-                            <span>* Hospedagem</span>
-                        </a>
-                    </div>
-                    <div class="col-lg-2 col-md-3 col-sm-6 col-6">
-                        <a href="#" class="mini-box">
-                            <i><img src="assets/images/work-process-item-01.png" alt=""></i>
-                            <strong>Eventos e Divulgação</strong>
-                            <span>* Ações Publicitárias</span>
-                              <span>* Panfletagem</span>
-                              <span>* Organização de Eventos</span>
 
-                        </a>
-                    </div>
-                    <div class="col-lg-2 col-md-3 col-sm-6 col-6">
-                        <a href="#" class="mini-box">
-                            <i><img src="assets/images/work-process-item-01.png" alt=""></i>
-                            <strong>Comunicação Visual</strong>
-                            <span>* Placas</span>
-                            <span>* Adesivos</span>
-                            <span>* Faixas e Banner</span>
-                            <span>* Letreiro</span>
-                        </a>
-                    </div>
-                </div>
-                 <!--***** Mini Box End *****-->
-            </div>
-        </div>
-    </section>
-    <!-- ***** Home Parallax End ***** -->
-
-    <!-- ***** Testimonials Start *****-->
-    <section class="section" id="testimonials">
+    <!-- Contact -->
+    <div id="contact" class="form">
         <div class="container">
-            <!-- ***** Section Title Start *****
             <div class="row">
                 <div class="col-lg-12">
-                    <div class="center-heading">
-                        <h2 class="section-title">What do they say?</h2>
-                    </div>
-                </div>
-                <div class="offset-lg-3 col-lg-6">
-                    <div class="center-text">
-                        <p>Donec tempus, sem non rutrum imperdiet, lectus orci fringilla nulla, at accumsan elit eros a turpis. Ut sagittis lectus libero.</p>
-                    </div>
-                </div>
-            </div>
-            <!-- ***** Section Title End *****-->
-
-            <div class="row">
-                <!-- ***** Testimonials Item Start *****
-                <div class="col-lg-4 col-md-6 col-sm-12">
-                    <div class="team-item">
-                        <div class="team-content">
-                            <i><img src="assets/images/testimonial-icon.png" alt=""></i>
-                            <p>Proin a neque nisi. Nam ipsum nisi, venenatis ut nulla quis, egestas scelerisque orci. Maecenas a finibus odio.</p>
-                            <div class="user-image">
-                                <img src="http://placehold.it/60x60" alt="">
-                            </div>
-                            <div class="team-info">
-                                <h3 class="user-name">Catherine Soft</h3>
-                                <span>Managing Director</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- ***** Testimonials Item End *****
-
-                <!-- ***** Testimonials Item Start *****
-                <div class="col-lg-4 col-md-6 col-sm-12">
-                    <div class="team-item">
-                        <div class="team-content">
-                            <i><img src="assets/images/testimonial-icon.png" alt=""></i>
-                            <p>Integer molestie aliquam gravida. Nullam nec arcu finibus, imperdiet nulla vitae, placerat nibh. Cras maximus venenatis molestie.</p>
-                            <div class="user-image">
-                                <img src="http://placehold.it/60x60" alt="">
-                            </div>
-                            <div class="team-info">
-                                <h3 class="user-name">Kelvin Wood</h3>
-                                <span>Digital Marketer</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- ***** Testimonials Item End *****
-
-                <!-- ***** Testimonials Item Start *****
-                <div class="col-lg-4 col-md-6 col-sm-12">
-                    <div class="team-item">
-                        <div class="team-content">
-                            <i><img src="assets/images/testimonial-icon.png" alt=""></i>
-                            <p>Quisque diam odio, maximus ac consectetur eu, auctor non lorem. Cras quis est non ante ultrices molestie. Ut vehicula et diam at aliquam.</p>
-                            <div class="user-image">
-                                <img src="http://placehold.it/60x60" alt="">
-                            </div>
-                            <div class="team-info">
-                                <h3 class="user-name">David Martin</h3>
-                                <span>Website Manager</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- ***** Testimonials Item End ***** -->
-            </div>
-        </div>
-    </section>
-    <!-- ***** Testimonials End ***** -->
-
-    <!-- ***** Pricing Plans Start ***** -->
-    <section class="section colored" id="pricing-plans">
-        <div class="container">
-            <!-- ***** Section Title Start ***** -->
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="center-heading">
-                        <h2 class="section-title">Conheça nossos planos</h2>
-                    </div>
-                </div>
-                <div class="offset-lg-3 col-lg-6">
-                    <div class="center-text">
-                        <p>Somos pioneiros na busca por resultados para mídias sociais. Possuimos um sistema único no mercado capaz de lhe ajudar no crescimento de suas redes.</p>
-                    </div>
-                </div>
-            </div>
-            <!-- ***** Section Title End ***** -->
-
-            <div class="row">
-                <!-- ***** Pricing Item Start ***** -->
-                <div class="col-lg-4 col-md-6 col-sm-12" data-scroll-reveal="enter bottom move 50px over 0.6s after 0.2s">
-                    <div class="pricing-item">
-                        <div class="pricing-header">
-                            <h3 class="pricing-title">BASIC</h3>
-                        </div>
-                        <div class="pricing-body">
-                            <div class="price-wrapper">
-                                <span class="currency">R$</span>
-                                <span class="price">150,00</span>
-                                <span class="period">/Mês</span>
-                                <span class="period">* Adesão anual</span>
-                            </div>
-                            <ul class="list">
-                                <li class="active">* Captação de seguidores ( Instagram )</li>
-                                <li class="active">* Unfollow</li>
-                                <li class="active">* Relatórios mensais </li>
-                                <li class="active">* Assistência técnica </li>
-                                <li>Suporte (Facebook, Google Business) </li>
-                                <li>Consultoria Mensal</li>
-                                <li>Desenvolvimento de postagens</li>
-                                <li>Agendamento de postagens</li>
-                                <li>Criação da identidade visual digital para redes sociais</li>
-                                <li>Conteúdo Institucional</li>
-                                <li>Gestão de Tráfego</li>
-                                <li>Segurança e monitoramento de dados</li>
-                            </ul>
-                        </div>
-                        <div class="pricing-footer">
-                            <a href="https://share.hsforms.com/1imon60vMSTKyBL18MQFO6w4nsw1" class="main-button">SOLICITE</a>
-                        </div>
-                    </div>
-                </div>
-                <!-- ***** Pricing Item End ***** -->
-
-                <!-- ***** Pricing Item Start ***** -->
-                <div class="col-lg-4 col-md-6 col-sm-12" data-scroll-reveal="enter bottom move 50px over 0.6s after 0.4s">
-                    <div class="pricing-item active">
-                        <div class="pricing-header">
-                            <h3 class="pricing-title">SOCIAL EVOLUTION</h3>
-                        </div>
-                        <div class="pricing-body">
-                            <div class="price-wrapper">
-                                <span class="currency">R$</span>
-                                <span class="price">450,00</span>
-                                <span class="period">/Mês</span>
-                                <span class="period">* Adesão anual</span>
-                            </div>
-                            <ul class="list">
-                              <li class="active">* Captação de seguidores ( Instagram )</li>
-                              <li class="active">* Unfollow</li>
-                              <li class="active">* Relatórios mensais </li>
-                              <li class="active">* Assistência técnica </li>
-                              <li class="active">* Suporte (Facebook, Google Business)</li>
-                              <li class="active">* Consultoria Mensal</li>
-                              <li class="active">* Desenvolvimento de postagens</li>
-                              <li class="active">* Agendamento de postagens</li>
-                              <li class="active">* Criação da identidade visual digital para redes sociais</li>
-                              <li class="active">* Conteúdo Institucional</li>
-                              <li class="active">* Gestão de Tráfego</li>
-                              <li class="active">* Segurança e monitoramento de dados</li>
-                            </ul>
-                        </div>
-                        <div class="pricing-footer">
-                            <a href="https://share.hsforms.com/1ur7wGMcoSCKYcmHLLVlCLg4nsw1" class="main-button">SOLICITE</a>
-                        </div>
-                    </div>
-                </div>
-                <!-- ***** Pricing Item End ***** -->
-
-                <!-- ***** Pricing Item Start ***** -->
-                <div class="col-lg-4 col-md-6 col-sm-12" data-scroll-reveal="enter bottom move 50px over 0.6s after 0.6s">
-                    <div class="pricing-item">
-                        <div class="pricing-header">
-                            <h3 class="pricing-title">Business</h3>
-                        </div>
-                        <div class="pricing-body">
-                            <div class="price-wrapper">
-                                <span class="currency"></span>
-                                <span class="price">DO SEU JEITO!</span>
-                                <span class="period"></span>
-                            </div>
-                            <ul class="list">
-                                <li class="active">Ideal para grandes empresas que necessitem de soluções completas. Solicite um orçamento e saiba o que podemos realizar pela sua empresa!</li>
-                                <!--<li class="active">5000 GB transfer</li>
-                                <li class="active">Pro Design Panel</li>
-                                <li class="active">15-minute support</li>
-                                <li class="active">Unlimited Emails</li>
-                                <li class="active">24/7 Security</li>-->
-                            </ul>
-                        </div>
-                        <div class="pricing-footer">
-                            <a href="https://wa.me/5513997255738" class="main-button">SOLICITE</a>
-                        </div>
-                    </div>
-                </div>
-                <!-- ***** Pricing Item End ***** -->
-            </div>
-        </div>
-    </section>
-    <!-- ***** Pricing Plans End ***** -->
-
-    <!-- ***** Counter Parallax Start *****
-    <section class="counter">
-        <div class="content">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-3 col-md-6 col-sm-12">
-                        <div class="count-item decoration-bottom">
-                            <strong>126</strong>
-                            <span>Projects</span>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 col-sm-12">
-                        <div class="count-item decoration-top">
-                            <strong>63</strong>
-                            <span>Happy Clients</span>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 col-sm-12">
-                        <div class="count-item decoration-bottom">
-                            <strong>18</strong>
-                            <span>Awards Wins</span>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 col-sm-12">
-                        <div class="count-item">
-                            <strong>27</strong>
-                            <span>Countries</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- ***** Counter Parallax End ***** -->
-
-    <!-- ***** Blog Start *****
-    <section class="section" id="blog">
-        <div class="container">
-            <!-- ***** Section Title Start *****
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="center-heading">
-                        <h2 class="section-title">Blog Entries</h2>
-                    </div>
-                </div>
-                <div class="offset-lg-3 col-lg-6">
-                    <div class="center-text">
-                        <p>Integer molestie aliquam gravida. Nullam nec arcu finibus, imperdiet nulla vitae, placerat nibh. Cras maximus venenatis molestie.</p>
-                    </div>
-                </div>
-            </div>
-            <!-- ***** Section Title End *****
-
-            <div class="row">
-                <div class="col-lg-4 col-md-6 col-sm-12">
-                    <div class="blog-post-thumb">
-                        <div class="img">
-                            <img src="assets/images/blog-item-01.png" alt="">
-                        </div>
-                        <div class="blog-content">
-                            <h3>
-                                <a href="#">Vivamus ac vehicula dui</a>
-                            </h3>
-                            <div class="text">
-                               Cras aliquet ligula dui, vitae fermentum velit tincidunt id. Praesent eu finibus nunc. Nulla in sagittis eros. Aliquam egestas augue.
-                            </div>
-                            <a href="#" class="main-button">Read More</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-12">
-                    <div class="blog-post-thumb">
-                        <div class="img">
-                            <img src="assets/images/blog-item-02.png" alt="">
-                        </div>
-                        <div class="blog-content">
-                            <h3>
-                                <a href="#">Phasellus convallis augue</a>
-                            </h3>
-                            <div class="text">
-                                Aliquam commodo ornare nisl, et scelerisque nisl dignissim ac. Vestibulum finibus urna ut velit venenatis, vel ultrices sapien mattis.
-                            </div>
-                            <a href="#" class="main-button">Read More</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-12">
-                    <div class="blog-post-thumb">
-                        <div class="img">
-                            <img src="assets/images/blog-item-03.png" alt="">
-                        </div>
-                        <div class="blog-content">
-                            <h3>
-                                <a href="#">Nam gravida purus non</a>
-                            </h3>
-                            <div class="text">
-                                Maecenas eu erat vitae dui convallis consequat vel gravida nulla. Vestibulum finibus euismod odio, ut tempus enim varius eu.
-                            </div>
-                            <a href="#" class="main-button">Read More</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- ***** Blog End ***** -->
-
-    <!-- ***** Contact Us Start *****
-    <section class="section colored" id="contact-us">
-        <div class="container">
-            <!-- ***** Section Title Start *****
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="center-heading">
-                        <h2 class="section-title">Vem falar com a gente! </h2>
-                    </div>
-                </div>
-                <div class="offset-lg-3 col-lg-6">
-                    <div class="center-text">
-                        <p>Maecenas pellentesque ante faucibus lectus vulputate sollicitudin. Cras feugiat hendrerit semper.</p>
-                    </div>
-                </div>
-            </div>
-            <!-- ***** Section Title End *****
-
-            <div class="row">
-                 ***** Contact Text Start *****
-                <div class="col-lg-4 col-md-6 col-sm-12">
-                    <h5 class="margin-bottom-30">Keep in touch</h5>
-                    <div class="contact-text">
-                        <p>110-220 Quisque diam odio, maximus ac consectetur eu, 10260
-                        <br>auctor non lorem</p>
-                        <p>You are NOT allowed to re-distribute Softy Pinko template on any template collection websites. Thank you.</p>
-                    </div>
-                </div>
-                <!-- ***** Contact Text End ***** -->
-
-                <!-- ***** Contact Form Start *****
-                <div class="col-lg-8 col-md-6 col-sm-12">
-                    <div class="contact-form">
-
-                        <form id="contact" action="" method="get">
-                          <div class="row">
-                            <div class="col-lg-6 col-md-12 col-sm-12">
-                              <fieldset>
-                                <input name="name" type="text" class="form-control" id="name" placeholder="Full Name" required="">
-                              </fieldset>
-                            </div>
-                            <div class="col-lg-6 col-md-12 col-sm-12">
-                              <fieldset>
-                                <input name="email" type="email" class="form-control" id="email" placeholder="E-Mail Address" required="">
-                              </fieldset>
-                            </div>
-                            <div class="col-lg-12">
-                              <fieldset>
-                                <textarea name="message" rows="6" class="form-control" id="message" placeholder="Your Message" required=""></textarea>
-                              </fieldset>
-                            </div>
-                            <div class="col-lg-12">
-                              <fieldset>
-                                <button type="submit" id="form-submit" class="main-button">Send Message</button>
-                              </fieldset>
-                            </div>
-                          </div>
-                        </form>
-                    </div>
-                </div>
-                <!-- ***** Contact Form End *****
-            </div>
-        </div>
-    </section>
-    <!-- ***** Contact Us End ***** -->
-
-    <!-- ***** Footer Start ***** -->
-    <footer>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 col-md-12 col-sm-12">
-                    <ul class="social">
-                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                        <li><a href="https://instagram.com/ladoasolution"><i class="fa fa-instagram"></i></a></li>
-                        <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                        <!--<li><a href="#"><i class="fa fa-rss"></i></a></li>
-                        <li><a href="#"><i class="fa fa-dribbble"></i></a></li>-->
+                    <h2>CONTATO</h2>
+                    <ul class="list-unstyled li-space-lg">
+                        <li class="address">Dúvidas? Entre em contato conosco!</li>
+                        <!--<li><i class="fas fa-map-marker-alt"></i>22 Innovative, San Francisco, CA 94043, US</li>-->
+                        <li><i class="fas fa-phone"></i><a class="blue" href="https://wa.me/5513997255738">+55 (13) 99725-5738</a></li>
+                        <li><i class="fas fa-envelope"></i><a class="blue" href="mailto:sac.anumtech@gmail.com">sac.anumtech@gmail.com</a></li>
                     </ul>
-                </div>
-            </div>
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+            <div class="row">
+                <div class="col-lg-6 offset-lg-3">
+
+                    <!-- Contact Form -->
+                    <form id="contactForm" data-toggle="validator" data-focus="false">
+                        <div class="form-group">
+                            <input type="text" class="form-control-input" id="cname" required>
+                            <label class="label-control" for="cname">Nome</label>
+                            <div class="help-block with-errors"></div>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" class="form-control-input" id="cemail" required>
+                            <label class="label-control" for="cemail">Email</label>
+                            <div class="help-block with-errors"></div>
+                        </div>
+                        <div class="form-group">
+                            <textarea class="form-control-textarea" id="cmessage" required></textarea>
+                            <label class="label-control" for="cmessage">Sua Mensagem</label>
+                            <div class="help-block with-errors"></div>
+                        </div>
+                        <div class="form-group checkbox">
+                            <input type="checkbox" id="cterms" value="Agreed-to-Terms" required>Li e concordo com as condições declaradas de Anum Tech em <a href="privacy-policy.html">política de privacidade</a> e <a href="terms-conditions.html">termos e condições de uso.</a>
+                            <div class="help-block with-errors"></div>
+                        </div>
+                        <div class="form-group">
+                            <button type="submit" class="form-control-submit-button">Enviar Mensagem</button>
+                        </div>
+                        <div class="form-message">
+                            <div id="cmsgSubmit" class="h3 text-center hidden"></div>
+                        </div>
+                    </form>
+                    <!-- end of contact form -->
+
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of form -->
+    <!-- end of contact -->
+
+
+    <!-- Footer -->
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="footer-col">
+                        <h4>Sobre nós</h4>
+                        <p>Somos uma empresa de desenvolvimento tecnológico voltada a criação de ferramentas e serviços com na criação de ecossistemas de crescimento e escalonamento de  negócios de todos os tipos.</p>
+                    </div>
+                </div> <!-- end of col -->
+                <div class="col-md-4">
+                    <div class="footer-col middle">
+                        <h4>Important Links</h4>
+                        <ul class="list-unstyled li-space-lg">
+                            <li class="media">
+                                <i class="fas fa-square"></i>
+                                <div class="media-body">Conheça a Anum -<a class="turquoise" href="https://docs.google.com/presentation/d/1TtZGzxYKus1bmTQdwuWQZhS9U0Xmk7oWsrrcE6V0kyw/edit?usp=sharing"> Institucional</a></div>
+                            </li>
+                            <li class="media">
+                                <i class="fas fa-square"></i>
+                                <div class="media-body">Seja um parceiro - <a class="turquoise" href="http://anum.hubspotpagebuilder.com/parceiro-anum"> Programa de parcerias</a></div>
+                            </li>
+                            <li class="media">
+                                <i class="fas fa-square"></i>
+                                <div class="media-body">Seja um consultor de vendas -<a class="turquoise" href=" https://anum.hubspotpagebuilder.com/consultor-de-vendas-anum"> Representante comercial Anum</a></div>
+                            </li>
+                        </ul>
+                    </div>
+                </div> <!-- end of col -->
+                <div class="col-md-4">
+                    <div class="footer-col last">
+                        <h4>Social Media</h4>
+                        <span class="fa-stack">
+                            <a href="#your-link">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fab fa-facebook-f fa-stack-1x"></i>
+                            </a>
+                        </span>
+                        <<!--span class="fa-stack">
+                            <a href="#your-link">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fab fa-twitter fa-stack-1x"></i>
+                            </a>
+                        </span>
+                        <span class="fa-stack">
+                            <a href="#your-link">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fab fa-google-plus-g fa-stack-1x"></i>
+                            </a>
+                        </span>-->
+
+                        <span class="fa-stack">
+                            <a href="#your-link">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fab fa-instagram fa-stack-1x"></i>
+                            </a>
+                        </span>
+                        <span class="fa-stack">
+                            <a href="#your-link">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fab fa-linkedin-in fa-stack-1x"></i>
+                            </a>
+                        </span>
+                    </div>
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of footer -->
+    <!-- end of footer -->
+
+
+    <!-- Copyright -->
+    <div class="copyright">
+        <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <p class="copyright">Copyright &copy; 2021 Lado A Solution - CNPJ: 39.313.347/0001-20</p>
-                </div>
-            </div>
-        </div>
-    </footer>
+                    <p class="p-small">Todos os direitos reservados á Anum Tech </p>
+                </div> <!-- end of col -->
+            </div> <!-- enf of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of copyright -->
+    <!-- end of copyright -->
 
-    <!-- jQuery -->
-    <script src="assets/js/jquery-2.1.0.min.js"></script>
 
-    <!-- Bootstrap -->
-    <script src="assets/js/popper.js"></script>
-    <script src="assets/js/bootstrap.min.js"></script>
-
-    <!-- Plugins -->
-    <script src="assets/js/scrollreveal.min.js"></script>
-    <script src="assets/js/waypoints.min.js"></script>
-    <script src="assets/js/jquery.counterup.min.js"></script>
-    <script src="assets/js/imgfix.min.js"></script>
-
-    <!-- Global Init -->
-    <script src="assets/js/custom.js"></script>
-
-  </body>
+    <!-- Scripts -->
+    <script src="js/jquery.min.js"></script> <!-- jQuery for Bootstrap's JavaScript plugins -->
+    <script src="js/popper.min.js"></script> <!-- Popper tooltip library for Bootstrap -->
+    <script src="js/bootstrap.min.js"></script> <!-- Bootstrap framework -->
+    <script src="js/jquery.easing.min.js"></script> <!-- jQuery Easing for smooth scrolling between anchors -->
+    <script src="js/swiper.min.js"></script> <!-- Swiper for image and text sliders -->
+    <script src="js/jquery.magnific-popup.js"></script> <!-- Magnific Popup for lightboxes -->
+    <script src="js/morphext.min.js"></script> <!-- Morphtext rotating text in the header -->
+    <script src="js/validator.min.js"></script> <!-- Validator.js - Bootstrap plugin that validates forms -->
+    <script src="js/scripts.js"></script> <!-- Custom scripts -->
+</body>
 </html>
